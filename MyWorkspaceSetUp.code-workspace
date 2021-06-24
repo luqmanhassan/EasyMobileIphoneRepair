@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../building-websites-html"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EasyMobileIphoneRepair"
+	}
+}
