@@ -1,136 +1,223 @@
 <!DOCTYPE html>
-<html lang=eng-us>
+<html lang="eng-us">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <meta name="author" content="LookManLook">
-    <meta name="description" content="Electronic Repair Shop">
-    <title>Appointments--Easy Mobile Iphone Repair</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link rel="stylesheet" href="mystyle.css">
+    <title>Appointments|Easy Mobile Iphone Repair</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electronic repair Shop">
+    <meta name="author" content="Luqman Hakeem">
+    <meta name="keywords" content="Iphone Repair">
+    <link rel="stylesheet" media="(min-width:1000px)" href="mystyles.css">
+    <link rel="stylesheet" media="(max-width:1000px)" href="mystyles2.css">
+
     <style>
-        .col {
-            float: left;
-            width: 50%;
+        @media (min-width:1000px) {
+            /* Main-Form */
+            .main-form {
+                padding: 50px;
+                border-bottom: 5px dashed black;
+                border-top: 5px dashed black;
+            }
+            .main-form form {
+                margin: 0 auto;
+                width: 50%;
+                border: 5px solid black;
+                padding: 30px;
+                box-shadow: 0 10px 20px black, 10px 0 20px black, 0 -10px 20px black, -10px 0 20px black;
+            }
+            select,
+            label,
+            input {
+                width: 100%;
+                margin: 20px 0;
+            }
+            select:hover,
+            input:hover {
+                background-color: yellow;
+                transition: 1s;
+            }
+            input,
+            select {
+                padding: 10px 5px;
+                border: 2px solid black;
+            }
+            .main-form [type="submit"] {
+                background-color: black;
+                color: white;
+            }
+            [type="submit"]:hover {
+                cursor: pointer;
+            }
+            label::before {
+                counter-increment: section;
+                content: counter(section) " | ";
+            }
+            body {
+                counter-reset: section;
+            }
         }
         
-        form {
-            margin: 0;
-            padding: 0;
-            width: 50%;
-        }
-        
-        #main {
-            padding: 30px;
-        }
-        
-        #main::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        
-        input[type=text],
-        select {
-            width: 100%;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        @media (max-width:1000px) {
+            /* Main-Form */
+            .main-form {
+                padding: 50px 30px;
+                border-bottom: 5px dashed black;
+                border-top: 5px dashed black;
+            }
+            .main-form form {
+                border: 5px solid black;
+                padding: 30px;
+                box-shadow: 0 10px 20px black, 10px 0 20px black, 0 -10px 20px black, -10px 0 20px black;
+            }
+            select,
+            label,
+            input {
+                width: 100%;
+                margin: 20px 0;
+            }
+            select:hover,
+            input:hover {
+                background-color: yellow;
+                transition: 1s;
+            }
+            input,
+            select {
+                padding: 10px 5px;
+                border: 2px solid black;
+            }
+            .main-form [type="submit"] {
+                background-color: black;
+                color: white;
+            }
+            [type="submit"]:hover {
+                cursor: pointer;
+            }
+            label::before {
+                counter-increment: section;
+                content: counter(section) " | ";
+            }
+            body {
+                counter-reset: section;
+            }
         }
     </style>
 
 </head>
 
 <body>
-
-
-    <div id="header">
-
-        <div id="logo">
-            <a href="index.html"> <img src="images/esy.png" style="width:200px; height:200px;"> </a>
-        </div>
-        <div id="nav">
+    <header>
+        <ul>
             <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href=" services.html ">Services</a></li>
-                <li><a href="appointments.html " style="text-decoration:underline">Appointments</a></li>
-
-
+                <li><img src="images/phoneicon.png" height="20px"></li>
+                <li>425-298-5170</li> |
+                <li><a href="https://www.google.com/maps/place/Easy+Mobile+Iphone+Repair/@47.5243936,-122.296937,12z/data=!4m8!1m2!2m1!1sphone+repair!3m4!1s0x0:0x8949cfda1da34803!8m2!3d47.4890065!4d-122.1722388?hl=en&authuser=0">Find Us On Maps</a></li>
             </ul>
-        </div>
+            <li><a href="" id="pricebox">Instant Price Quote</a></li>
+        </ul>
+    </header>
 
+
+    <nav>
+        <ul class="ul-1">
+            <ul>
+                <li><img src="images/ezlogo.png" alt="Company-logo" height="200px"></li>
+            </ul>
+            <ul class="ul-2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="appointments.html" style="color:white;">Appointments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" style="border-right:none;">Contact Us <!--&#8595;--></a></li>
+            </ul>
+        </ul>
+    </nav>
+
+
+    <div class="main-top-bar ">
+        <div class="div1">
+            <img src="images/warrant.png" alt="Warrant" width="200px">
+        </div>
+        <div class="div2">
+            <h1>Appointments</h1>
+            <h6>Easy Mobile Iphone Repair Is Seattle's Top<br> Choice For Fast Smartphone Repair And More</h6>
+        </div>
     </div>
 
 
-    <h1 style="font-size:80px; padding-left:30px;">Appointments</h1>
+    <div class="main-form">
+        <form target="_blank" autocomplete="on">
 
-    <div id="main">
+            <label for="phones">Choose A Phone:</label>
+            <select id="phones" name="phones">
+             <option value="Iphone 11">IPhone 11</option>
+             <option value="Iphone 11 Pro">IPhone 11 Pro</option>
+             <option calue="Iphone 11 Pro Max">IPhone 11 Pro Max</option>
+             <option value="Iphone X">IPhone X</option>
+             <option value="Iphone XR">IPhone XR</option>
+             <option value="Iphone XS">IPhone XS</option>
+             <option value="Iphone XS Max">IPhone XS Max</option>
+         </select>
 
-        <div class="col">
-            <p>To set up an appointment, we recommend that you fill out <br> the info bellow or call us today!</p>
-            <br>
-            <p>(425) 298-5170</p>
-            <p>HAKEEM@easymobileiphonerepair.com</p>
-            <p>401 Olympia Ave NE Unit 351,<br>Renton, WA 98056</p>
-
-        </div>
-
-        <div class="col">
-            <form target="_blank" autocomplete="on">
-                <label for="fname" name="fname">First Name: </label><br>
-                <input type="text" name="fname" id="fname">
-
-                <label for="femail" name="femail">Email<sub>*</sub></label>
-                <input type="text" name="femail" id="femail">
-
-                <label for="wservice" name="wservice">What Service Do You Want?</label>
-                <input type="text" name="wservice" id="wservice">
-
-
-                <label for="datem" name="date">Date</label>
-                <input type="text" name="date" id="datem">
-                <input type="text" name="date" id="dated">
-                <input type="text" name="date" id="datey">
-
-                <label for="timehr" name="timehr">Time</label>
-                <input type="text" name="time" id="timehr">
-                <input type="text" name="time" id="timemin">
-                <input type="text" name="time" id="timesec">
-                <select id="dateampm">
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                </select>
+            <label for="repairneed">Desired Repair:</label>
+            <select id="repairneed" name="repairneed"> 
+               <option value="Screen Replacement">Screen Replacement</option>
+               <option value="Battery Replacement">Battery Replacement</option>
+               <option  value="Charging Port Replacement">Charging Port Replacement</option>
+               <option value="Camera Replacement">Camera Replacement</option>
+               <option value="Back Glass Replacement">Back Glass Replacement</option>
+        </select>
 
 
+            <label for="location">Choose Your Location:</label>
+            <select id="location" name="location"> 
+            <option value="Seattle">Seattle</option>
+             <option value="Dallas">Dallas</option>
+        </select>
 
-                <input type="submit" value="Submit" style="float:right;">
-
-            </form>
-        </div>
+            <label for="date">Desired Date</label>
+            <input type="text" id="date" name="date">
 
 
+            <label for="time">Desired Time:</label>
+            <select id="time" name="time"> 
+            <option value="8AM">8AM</option>
+            <option value="9AM">9AM</option>
+            <option value="10AM">10AM</option>
+            <option value="11AM">11AM</option>
+            <option value="12PM">12PM</option>
+            <option value="1PM">1PM</option>
+            <option value="2PM">2PM</option>
+            <option value="3PM">3PM</option>
+            <option value="4PM">4PM</option>
+            <option value="5PM">5PM</option>
+            <option value="6PM">6PM</option>
+            <option value="7PM">7PM</option>
+        </select>
+            <label for="time">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <label for="phonenumber">Phone Number:</label>
+            <input type="text" name="phonenumber" id="phonenumber">
+
+
+            <input type="submit" value="Submit ">
+
+        </form>
     </div>
 
 
-
-
-
-    <div id="footer">
-        <div>
-            <h2>Easy Mobile Iphone Repair</h1>
-        </div>
-
-        <div class="ftext">
-            <h4>401 Olympia Ave NE Unit 351,<br>Renton, WA 98056</h4>
-        </div>
-        <div class="ftext" style="padding-left:100px;">
-            <h4>425-298-5170</h4>
-        </div>
-
+    <div class="mini-footer">
+        <small>© 2021 Easy Mobile Iphone Repair (Not affiliated with Apple, Inc., LG Corp. or Samsung Corp.)</small>
     </div>
 
+    <footer>
+
+        <h2> Get an Instant Quote For Your Repair Now!</h2>
+        <a href=" ">Repair My Device</a>
+
+    </footer>
 </body>
-
 
 </html>

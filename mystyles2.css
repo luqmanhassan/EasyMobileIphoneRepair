@@ -1,0 +1,221 @@
+/* Universal Rules */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Font1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* MOBILE VIEW */
+
+
+/* Header Stuff */
+
+header {
+    overflow: hidden;
+    border-bottom: 3px dashed black;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    font-size: 12px;
+}
+
+header .main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header li {
+    margin: 0 10px;
+}
+
+#pricebox {
+    padding: 0 5px;
+    text-decoration: underline;
+}
+
+
+/* Navigation */
+
+
+/* Navigation */
+
+nav {
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+nav li {
+    padding-bottom: 10px;
+}
+
+nav a {
+    border-bottom: 5px dashed black;
+}
+
+nav ul {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* main-top-bar */
+
+.main-top-bar {
+    background-color: yellow;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.main-top-bar img {
+    width: 50%;
+}
+
+.main-top-bar div:last-child {
+    width: 100%;
+}
+
+.main-top-bar h1 {
+    font-size: 60px;
+}
+
+.main-top-bar h6 {
+    font-size: 15px;
+}
+
+
+/* Buzz-Us */
+
+.buzz-us {
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 5px dashed black;
+    border-top: 5px dashed black;
+}
+
+.buzz-us h1 {
+    text-shadow: -1px 0 black;
+}
+
+.buzz-us button {
+    margin: 40px 20px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.buzz-us button:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+
+.buzz-us .dropdown1 {
+    position: relative;
+}
+
+.buzz-us .dropdowncontent1 {
+    display: none;
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    min-width: 150px;
+    box-shadow: 0px 5px 10px black;
+    z-index: 1;
+}
+
+.buzz-us .dropdown1:hover .dropdowncontent1 {
+    display: block;
+}
+
+.buzz-us .dropdown2 {
+    position: relative;
+}
+
+.buzz-us .dropdowncontent2 {
+    display: none;
+    position: absolute;
+    right: 23px;
+    top: 40px;
+    min-width: 150px;
+    box-shadow: 0px 5px 10px black;
+    z-index: 1;
+}
+
+.buzz-us .dropdown2:hover .dropdowncontent2 {
+    display: block;
+}
+
+.buzz-us a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.buzz-us a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Mini-Footer */
+
+.mini-footer {
+    background-color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+footer a:hover {
+    transition: 1s;
+    box-shadow: 0 5px 15px white;
+}
+
+footer h2 {
+    padding: 5px;
+}
