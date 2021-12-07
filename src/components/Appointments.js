@@ -8,8 +8,8 @@ function Appointments() {
         <h1>Appointments</h1>
         <iframe
           src="https://squareup.com/appointments/book/i46uvh6xxls625/L1Y72J1RG9D43/start"
-          width="500 "
-          height="450 "
+          width="500px"
+          height="1100px"
           frameborder="0 "
           style={{border: '0px'}}
           allowfullscreen=" "

@@ -133,6 +133,9 @@
     p {
       margin: 10px 0px;
     }
+    iframe {
+      padding: 0px 100px;
+    }
   }
 
   .Appointments {
@@ -147,6 +150,9 @@
       flex-flow: column nowrap;
       align-items: center;
       padding: 20px 100px;
+    }
+    iframe {
+      padding: 20px;
     }
   }
 
