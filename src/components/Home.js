@@ -7,19 +7,20 @@ function Home() {
   let navigate = useNavigate();
 
   return (
-    <div className="Home">
+    <div className="container mx-auto">
       <Nav />
-      <div className="main1">
+      <div className="bg-yellow-300 flex flex-row flex-wrap justify-around items-center p-10">
         <div className="div1">
-          <img src={phone} alt="IPhone" />
+          <img src={phone} alt="IPhone" className="w-80" />
         </div>
-        <div className="div2">
-          <h1>Easy Mobile Iphone Repair</h1>
-          <p>
-            Providing The Best Electronic Phone Repair <br />
-            Service In The Greater Seattle, WA Area.
+        <div className="text-center">
+          <h1 className="text-6xl font-bold">Easy Mobile Iphone Repair</h1>
+          <p className="text-3xl my-10">
+            Providing The Best IPhone Repair <br />
+            Service In The Greater Seattle Area.
           </p>
           <button
+            className="text-3xl bg-black p-4 text-white"
             onClick={() => {
               navigate(`/appointments`);
             }}
@@ -28,9 +29,11 @@ function Home() {
           </button>
         </div>
       </div>
-      <div className="main2">
-        <h1>Experience An Easy Repair Today</h1>
-        <p>
+      <div className="text-center p-10 bg-white">
+        <h1 className="text-2xl font-bold my-5">
+          Experience An Easy Repair Today
+        </h1>
+        <p className="text-lg">
           Enter our office today, and you can expect premier customer service,
           starting with a free diagnostic test and a free quote for repairs with
           no obligation to purchase. With waiting times as short as 30 minutes
@@ -38,62 +41,68 @@ function Home() {
           ready to help you should you decide to go ahead with the fix. Combine
           this 5-star service with a free 30 day warranty on all repairs, and
           it’s no wonder that Easy Mobile Repair is Seattle’s first choice for
-          smartphone repair.
+          iphone repairs.
         </p>
 
-        <h1>Schedule your repair online!</h1>
-        <p>
+        <h1 className="text-2xl font-bold my-5">
+          Schedule your repair online!
+        </h1>
+        <p className="text-lg">
           At Easy Mobile IPhone Repair, all repairs come with free diagnostics
-          and a lifetime warranty – use our fast device repair services with
+          and a 30 day warranty – use our fast device repair services with
           confidence and leave with peace of mind that we’ve got your back, no
           matter what happens.
         </p>
       </div>
-      <div className="main3">
-        <h1>HIGH-QUALITY PARTS</h1>
-        <p>
+      <div className="bg-yellow-300 text-center p-10">
+        <h1 className="text-2xl font-bold">HIGH-QUALITY PARTS</h1>
+        <p className="text-lg my-5">
           Easy Mobile Iphone Repair only uses high-quality OEM and aftermarket
           parts for repairs
         </p>
 
-        <h1>FREE ISSUE DIAGNOSIS</h1>
-        <p>
+        <h1 className="text-2xl font-bold">FREE ISSUE DIAGNOSIS</h1>
+        <p className="text-lg my-5">
           Not sure what’s wrong? We’ll diagnose your issue free. No fix, no
           payment
         </p>
-        <h1>CERTIFIED TECHNICIAN SAME-DAY REPAIR</h1>
-        <p>
+        <h1 className="text-2xl font-bold">
+          CERTIFIED TECHNICIAN SAME-DAY REPAIR
+        </h1>
+        <p className="text-lg my-5">
           Knowledgeable, passionate service from qualified and trained expert
           97% of Easy Mobile repairs are completed within 30 minutes
         </p>
-        <h1>LIFETIME WARRANTIES</h1>
-        <p>All repairs come with a Lifetime Warranty for your peace of mind</p>
-        <h1>BEST REPAIR SERVICE IN SEATTLE</h1>
-        <p>
+        <h1 className="text-2xl font-bold">30 DAY WARRANTY</h1>
+        <p className="text-lg my-5">
+          All repairs come with a 30 day Warranty for your peace of mind
+        </p>
+        <h1 className="text-2xl font-bold">BEST REPAIR SERVICE IN SEATTLE</h1>
+        <p className="text-lg my-5">
           Easy Mobile’s expert, friendly service has earned us some 5-star
           reviews <br /> Easy Mobile iPhone Repair offers Seattle’s friendliest,
           fastest repair service with expert repairs for a variety of iPhone
           devices. <br />
-          And, with a lifetime warranty on all repairs, we’ve got your back when
+          And, with a 30 day warranty on all repairs, we’ve got your back when
           things go wrong in future
         </p>
       </div>
 
-      <div className="main4">
+      <div className="text-center p-10 flex flex-row flex-wrap justify-around  items-center bg-white">
         <div>
-          <h1>Where You Can Find Us </h1>
-          <p>
+          <h1 className="text-2xl font-bold">Where You Can Find Us </h1>
+          <p className="text-lg my-5">
             Easy Mobile Iphone Repair
             <br />
             401 Olympia Ave NE Unit 351, Renton, WA 98056 <br />
           </p>
-          <p>
+          <p className="text-lg my-5">
             Hours of Operation <br />
             Monday-Friday: 8:00am through 8:00pm <br />
             Saturday-Sunday: 10:00am through 4:00pm
           </p>
 
-          <p>Tel: (425) 298-5170 </p>
+          <p className="text-lg my-5">Tel: (425) 298-5170 </p>
         </div>
         <div>
           <iframe
@@ -106,6 +115,7 @@ function Home() {
             aria-hidden="false"
             tabindex="0 "
             title="Shop Location"
+            className="p-20"
           ></iframe>
         </div>
       </div>

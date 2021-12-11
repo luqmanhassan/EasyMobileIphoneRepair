@@ -5,15 +5,16 @@ function Nav() {
   let navigate = useNavigate();
 
   return (
-    <nav className="Nav">
-      <ul class="ul1">
+    <nav className="container mx-auto flex flex-row flex-wrap justify-between content-center items-center bg-yellow-300">
+      <ul class=" flex-1">
         <li>
-          <img src={logo} alt="logo" width="200px" />
+          <img src={logo} alt="logo" className="w-40" />
         </li>
       </ul>
 
-      <ul class="ul-2">
+      <ul className="flex flex-row flex-1 justify-center">
         <li
+          className="mx-5 text-xl font-bold underline"
           onClick={() => {
             navigate(`/`);
           }}
@@ -21,6 +22,7 @@ function Nav() {
           Home
         </li>
         <li
+          className="mx-5 text-xl font-bold underline"
           onClick={() => {
             navigate(`/appointments`);
           }}

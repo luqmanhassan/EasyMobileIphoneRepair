@@ -6,9 +6,10 @@ function Footer() {
   let navigate = useNavigate();
 
   return (
-    <div className="Footer">
-      <div>
+    <div className="container mx-auto flex flex-row flex-wrap justify-between content-center items-center bg-yellow-300 p-10">
+      <div className="flex">
         <span
+          className="text-xl font-bold underline mx-5"
           onClick={() => {
             navigate(`/`);
           }}
@@ -16,6 +17,7 @@ function Footer() {
           Home
         </span>
         <span
+          className="text-xl font-bold underline mx-5"
           onClick={() => {
             navigate(`/appointments`);
           }}
@@ -23,9 +25,13 @@ function Footer() {
           Appointments
         </span>
       </div>
-      <div>
-        <img src={google} alt="google" width="40px" />
-        <img src={yelp} alt="yelp" width="50px" />
+      <div className="flex">
+        <a href="https://g.page/r/CQNIox3az0mJEBA">
+          <img src={google} alt="google" className="w-10 mx-2" />
+        </a>
+        <a href="https://www.yelp.com/biz/easy-mobile-iphone-screen-repair-renton?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)">
+          <img src={yelp} alt="yelp" className="w-10 mx-2" />
+        </a>
       </div>
     </div>
   );
