@@ -6,10 +6,10 @@ function Footer() {
   let navigate = useNavigate();
 
   return (
-    <div className="container mx-auto flex flex-row flex-wrap justify-between content-center items-center bg-yellow-300 p-10">
+    <div className="container mx-auto flex flex-col flex-wrap justify-between content-center items-center bg-yellow-300 sm:flex-row p-10">
       <div className="flex">
         <span
-          className="text-xl font-bold underline mx-5"
+          className="text-xl font-bold mr-5 cursor-pointer hover:underline"
           onClick={() => {
             navigate(`/`);
           }}
@@ -17,7 +17,7 @@ function Footer() {
           Home
         </span>
         <span
-          className="text-xl font-bold underline mx-5"
+          className="text-xl font-bold cursor-pointer hover:underline"
           onClick={() => {
             navigate(`/appointments`);
           }}
@@ -25,12 +25,15 @@ function Footer() {
           Appointments
         </span>
       </div>
-      <div className="flex">
-        <a href="https://g.page/r/CQNIox3az0mJEBA">
-          <img src={google} alt="google" className="w-10 mx-2" />
+      <div className="flex ">
+        <a href="https://g.page/r/CQNIox3az0mJEBA" className="w-10 mr-5">
+          <img src={google} alt="google" />
         </a>
-        <a href="https://www.yelp.com/biz/easy-mobile-iphone-screen-repair-renton?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)">
-          <img src={yelp} alt="yelp" className="w-10 mx-2" />
+        <a
+          href="https://www.yelp.com/biz/easy-mobile-iphone-screen-repair-renton?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+          className="w-10 "
+        >
+          <img src={yelp} alt="yelp" />
         </a>
       </div>
     </div>
