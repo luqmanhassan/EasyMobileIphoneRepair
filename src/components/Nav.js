@@ -5,7 +5,7 @@ function Nav() {
   let navigate = useNavigate();
 
   return (
-    <nav className="container mx-auto flex flex-col flex-wrap justify-between content-center items-center bg-yellow-300 sm:flex-row p-10">
+    <nav className="container mx-auto sticky top-0 flex flex-col flex-wrap justify-between content-center items-center bg-yellow-300 sm:flex-row p-5">
       <ul class=" flex-1">
         <li>
           <img src={logo} alt="logo" className="w-44" />

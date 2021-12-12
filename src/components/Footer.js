@@ -6,26 +6,8 @@ function Footer() {
   let navigate = useNavigate();
 
   return (
-    <div className="container mx-auto flex flex-col flex-wrap justify-between content-center items-center bg-yellow-300 sm:flex-row p-10">
-      <div className="flex">
-        <span
-          className="text-xl font-bold mr-5 cursor-pointer hover:underline"
-          onClick={() => {
-            navigate(`/`);
-          }}
-        >
-          Home
-        </span>
-        <span
-          className="text-xl font-bold cursor-pointer hover:underline"
-          onClick={() => {
-            navigate(`/appointments`);
-          }}
-        >
-          Appointments
-        </span>
-      </div>
-      <div className="flex ">
+    <div className="container mx-auto bg-yellow-300 p-10">
+      <div className="flex justify-center">
         <a href="https://g.page/r/CQNIox3az0mJEBA" className="w-10 mr-5">
           <img src={google} alt="google" />
         </a>
